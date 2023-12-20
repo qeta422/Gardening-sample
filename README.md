@@ -1,5 +1,5 @@
 # Gardening-sample
-A template of html, css gardening website
+## A template of html, css gardening website
 
 Structure: 
 
