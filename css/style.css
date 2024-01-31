@@ -15,52 +15,37 @@ body {
 .header {
   max-width: 100%;
   background: rgba(29, 112, 78, 0.3);
-  position: fixed;
 }
 .header__nav {
-  max-width: 75%;
+  max-width: 45%;
   margin: 0 auto;
-  padding: 0.5rem 0;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.header__list {
   display: flex;
 }
-.navigation a {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 17px;
+.header__list li {
+  margin-left: 2rem;
 }
-
-.navigation a li {
-  display: table-cell;
-  text-align: center;
-  padding-top: 35px;
-  height: 100%;
-  color: #e8faed;
-  font-size: 15px;
+.header__link {
+  color: white;
   font-family: verdana;
 }
-
-img {
+.header__icons {
+  font-size: 24px;
+  color: white;
+}
+.header__icons i {
+  margin-right: 2rem;
+}
+.header__bg-image {
   width: 100%;
-}
-
-.fa-facebook-f {
-  font-size: 24px;
-  padding-right: 30px;
-  padding-top: 35px;
-}
-
-.fa-twitter {
-  font-size: 24px;
-  padding-top: 35px;
-  padding-right: 55px;
-}
-
-.icons {
-  width: 150px;
-  height: 100px;
-  float: right;
-  margin-right: 180px;
+  height: 50%;
+  background-image: url(../images/banner.jpg);
 }
 
 .imgtext {
