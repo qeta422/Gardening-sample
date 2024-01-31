@@ -1,0 +1,14 @@
+{
+  "name": "gardening-sample",
+  "version": "1.0.0",
+  "description": "Gardening page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "qeta",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

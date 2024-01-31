@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="icon" type="image/x-icon" href="images/download1.png">
 	<script src="https://kit.fontawesome.com/9e919ed58d.js" crossorigin="anonymous"></script>
-	<title>Home</title>
+	<title>Gardening</title>
 </head>
+
 <body>
-	<div class="header">
-		<div class="inner_header">
-			<div class="icons">
-				<i class="fa-brands fa-twitter"></i>
-			    <i class="fa-brands fa-facebook-f"></i>
-			</div>
-			<ul class="navigation">
-				<a><li>Home</li></a>
-				<a><li>Portfolio</li></a>
-				<a><li>About me</li></a>
-				<a><li>Team</li></a>
-				<a><li>Contact</li></a>
+	<header class="header">
+		<nav class="header__nav">
+			<ul class="header__menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
+			<aside class="header__icons">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook-f"></i>
+			</aside>
+		</nav>
+	</header>
+	<!-- <main>
+		<article class="imgtext">
+			<h2>Hi, I'm Garden Landscaper</h2>
+			<p>Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi
+				invenire.</p>
+			<img src="images/download19.png">
+		</article>
+		<img src="images/download9.jpg">
+
+		<div class="secondimg">
+			<img src="images/download7.jpg">
 		</div>
-	</div> 
-	    	<div class="imgtext">
-    		<h2>Hi, I'm Garden Landscaper</h2>
-    		<p>Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no, nec ea quodsi invenire.</p>
-    		<img src="images/download19.png">
-    	    </div>
-    	<img src="images/download9.jpg"> 
 
-    		<div class="secondimg">
-    		<img src="images/download7.jpg">
-    	    	
-    	    </div>
+		<div class="imgover">
+			<img src="images/download8.jpg">
+		</div>
 
-    	    <div class="imgover">
-    		<img src="images/download8.jpg">
-    	    	
-    	    </div>
+		<div class="second">
+			<h2>Local Artist Just For You</h2>
+			<p>Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no. Te tibique
+				intellegam mediocritatem his, est quis.</p>
+			<p>Mary Byrd, owner</p>
+			<img src="images/download19.png">
+		</div>
 
-    	    <div class="second">
-    		<h2>Local Artist Just For You</h2>
-    		<p>Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem fierent ullamcorper ius no. Te tibique intellegam mediocritatem his, est quis.</p>
-    		<p>Mary Byrd, owner</p>
-    		<img src="images/download19.png">
-    	    </div>
+		<article class="grey">
+			<div class="gtxt">
+				<p>my portfolio</p>
+				<h2>My Biggest Projects</h2>
+				<p>Lorem ipsum dolor sit amet, pri omnium verterem id, sit labore dicunt an, ea civibus.</p>
+				<a href="#" class="button">View more</a>
+			</div>
+			<img src="images/download10(2).jpg">
+		</article>
 
-    	    <div class="grey">
-    	    	<div class="gtxt">
-    	    	<p>my portfolio</p>
-    	    	<h2>My Biggest Projects</h2>
-    	    	<p>Lorem ipsum dolor sit amet, pri omnium verterem id, sit labore dicunt an, ea civibus.</p>
-    	    	<a href="#" class="button">View more</a>
-    	    </div>
-    	    <img src="images/download10(2).jpg">
-    	    </div>
-
-    	    <div class="lggrey">
-    	    	<div class="lggtxt">
-    	    	<p>my portfolio</p>
-    	    	<h2>My Happy Clients</h2>
-    	    	<img src="images/download1.png">
-    	    	<img src="images/download4.png">
-    	    	<img src="images/download2.png">
-    	    	<img src="images/download3.png">
-    	    	<img src="images/download2.png">
-    	    	<img src="images/download5.png">
-    	    </div>
-    	    <img src="images/download11(2).jpg">
-    	    </div>
-    	    <div class="overimg"></div>
-    	    <div class="btext">
-    	    	<h2>Qualified Garden Landscaper</h2>
-    		    <img src="images/download19.png">
-    	    </div>
-    	    
+		<div class="lggrey">
+			<div class="lggtxt">
+				<p>my portfolio</p>
+				<h2>My Happy Clients</h2>
+				<img src="images/download1.png">
+				<img src="images/download4.png">
+				<img src="images/download2.png">
+				<img src="images/download3.png">
+				<img src="images/download2.png">
+				<img src="images/download5.png">
+			</div>
+			<img src="images/download11(2).jpg">
+		</div>
+		<div class="overimg"></div>
+		<div class="btext">
+			<h2>Qualified Garden Landscaper</h2>
+			<img src="images/download19.png">
+		</div>
+	</main> -->
 </body>
-</html> 
+
+</html>
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    box-sizing: border-box;
+}
