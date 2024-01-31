@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background: rgba(17, 99, 65, 0.532);
+    position: fixed;
+    z-index: 10;
+
+    &__nav {
+      max-width: 45%;
+      margin: 0 auto;
+      padding: 2rem 0 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+
+    &__list {
+      display: flex;
+
+      li {
+        margin-left: 2rem;
+      }
+    }
+
+    &__link {
+      color: white;
+      font-family: verdana;
+    }
+
+    &__icons {
+      font-size: 24px;
+      color: white;
+
+      i {
+        margin-right: 2rem;
+      }
+      
+    }
+
+  }
