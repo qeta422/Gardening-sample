@@ -1,0 +1,27 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 50%;
+        box-shadow: 0 1rem 4rem rgba($color-black, 0.4);
+        position: absolute;
+        z-index: 8;
+
+        &--p1 {
+            left: -2rem;
+            top: 3rem;
+        }
+    
+        &--p2 {
+            right: 5rem;
+            top: -1rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            transition: .2s;
+            z-index: 9;
+        }
+    }
+}
