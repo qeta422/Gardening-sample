@@ -1,17 +1,157 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "base/animations";
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"base/animations\";\d\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 5:9  root stylesheet";
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.paragraph {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.row {
+  max-width: 70rem;
+  margin: 0 auto;
+  background-color: red;
+}
+.row:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 3rem;
+}
+.row .col-1-of-2 {
+  width: calc((70rem - 3rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((70rem - 2 * 3rem) / 3);
+}
+.row .col-1-of-4 {
+  width: calc((70rem - 3 * 3rem) / 4);
+}
+.row .col-2-of-3 {
+  width: calc(2 * (70rem - 2 * 3rem) / 3 + 3rem);
+}
+.row .col-2-of-4 {
+  width: calc(2 * (70rem - 3 * 3rem) / 4 + 3rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * (70rem - 3 * 3rem) / 4 + 6rem);
+}
+
+.header {
+  width: 100%;
+  background: rgba(17, 99, 65, 0.532);
+  position: fixed;
+  z-index: 10;
+}
+.header__nav {
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.header__list {
+  display: flex;
+}
+.header__list li {
+  margin-left: 2rem;
+}
+.header__link {
+  color: #fff;
+  font-family: verdana;
+}
+.header__link:hover {
+  color: rgb(165, 196, 183);
+}
+.header__icons {
+  font-size: 24px;
+  color: #fff;
+}
+.header__icons i {
+  margin-right: 2rem;
+}
+
+.banner {
+  object-fit: cover;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner__imgtext {
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+  max-width: 26rem;
+  animation-name: bottom;
+  animation-duration: 2s;
+}
+.banner__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #fff;
+}
+.banner__paragraph {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+.banner__signature {
+  max-width: 15rem;
+  float: right;
+}
+
+.mosaic {
+  margin-top: 5rem;
+}
+.mosaic__text {
+  margin: 10rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

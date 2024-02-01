@@ -1,7 +1,54 @@
 .banner {
     object-fit: cover;
     position: relative;
+
     img {
       width: 100%;
     }
+
+    &__imgtext {
+      position: absolute;
+      top: 20rem;
+      right: 10rem;
+      max-width: 26rem;
+
+      animation-name: bottom;
+      animation-duration: 2s;
+    }
+
+    &__heading {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: 3rem;
+      color: $color-white;
+    }
+
+    &__paragraph {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: $color-white;
+      margin-top: 1.5rem;
+    }
+
+    &__signature {
+      max-width: 15rem;
+      float: right;
+    }
+}
+
+.mosaic {
+  margin-top: 5rem;
+  
+  &__text {
+    margin: 10rem auto;
+  }
+
+  &__heading {
+
+  }
+
+  &__paragraph {
+
+  }
 }

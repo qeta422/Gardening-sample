@@ -23,13 +23,17 @@
     }
 
     &__link {
-      color: white;
+      color: $color-white;
       font-family: verdana;
+
+      &:hover {
+        color: rgb(165, 196, 183);
+      }
     }
 
     &__icons {
       font-size: 24px;
-      color: white;
+      color: $color-white;
 
       i {
         margin-right: 2rem;
