@@ -26,14 +26,14 @@ body {
 }
 
 .heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 3rem;
   color: #fff;
 }
 
 .paragraph {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-size: 1rem;
   color: #fff;
@@ -62,6 +62,102 @@ body {
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   transition: 0.2s;
   z-index: 9;
+}
+
+.heading__area {
+  padding-top: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.heading .cards-heading {
+  margin-bottom: 0px;
+  font-size: 35px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(17, 99, 65);
+}
+.heading .cards-paragraph {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(17, 99, 65);
+}
+
+.post-area {
+  width: 980px;
+  margin: 100px auto;
+}
+.post-area img {
+  width: 100%;
+}
+.post-area__asides {
+  display: flex;
+  justify-content: space-between;
+}
+.post-area__aside {
+  width: 48.5%;
+}
+.post-area__text-content {
+  padding: 28px 30px 25px;
+}
+.post-area__text-content a {
+  text-decoration: none;
+  color: rgb(17, 99, 65);
+}
+.post-area__text-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 10px 0px;
+  color: rgb(17, 99, 65);
+}
+.post-area__text-content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(17, 99, 65);
+}
+.post-area__user-information {
+  display: flex;
+  align-items: center;
+}
+.post-area__date-name p {
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(17, 99, 65);
+}
+.post-area__post-cards {
+  margin-top: 30px;
+  border: 1px solid rgb(188, 184, 184);
+}
+.post-area__comment-likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 1px solid rgb(210, 210, 210);
+  padding-top: 10px;
+}
+.post-area__comment-likes p {
+  margin: 0px;
+}
+.post-area__comment-likes span {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(17, 99, 65);
+}
+.post-area__comment-likes .fa-heart {
+  font-size: 16px;
+  color: red;
 }
 
 .row {
@@ -124,7 +220,7 @@ body {
 }
 .header__link {
   color: #fff;
-  font-family: verdana;
+  font-family: "Cormorant Garamond", serif;
 }
 .header__link:hover {
   color: rgb(165, 196, 183);
@@ -161,14 +257,14 @@ body {
   margin-top: 5rem;
 }
 .mosaic__heading {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 2.5rem;
   color: rgb(17, 99, 65);
   margin-right: 5rem;
 }
 .mosaic__paragraph {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-size: 1rem;
   color: rgb(17, 99, 65);
