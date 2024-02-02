@@ -95,6 +95,49 @@ body {
 }
 .post-area img {
   width: 100%;
+  height: 320px;
+}
+.post-area__overlay {
+  width: 100%;
+  height: 320px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  display: none;
+  transition: 0.5s;
+}
+.post-area:hover .post-area__overlay {
+  display: block;
+}
+.post-area__user-information {
+  display: flex;
+  align-items: center;
+}
+.post-area__date-name {
+  padding: 10px 0 0 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+.post-area__comment-likes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 250px;
+  border-top: 1px solid rgb(210, 210, 210);
+  padding-top: 10px;
+}
+.post-area__comment-likes span {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+.post-area__comment-likes .fa-heart {
+  font-size: 16px;
+  color: red;
 }
 .post-area__asides {
   display: flex;
@@ -123,41 +166,10 @@ body {
   font-weight: 400;
   color: rgb(17, 99, 65);
 }
-.post-area__user-information {
-  display: flex;
-  align-items: center;
-}
-.post-area__date-name p {
-  margin: 0px;
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  color: rgb(17, 99, 65);
-}
 .post-area__post-cards {
   margin-top: 30px;
   border: 1px solid rgb(188, 184, 184);
-}
-.post-area__comment-likes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-  border-top: 1px solid rgb(210, 210, 210);
-  padding-top: 10px;
-}
-.post-area__comment-likes p {
-  margin: 0px;
-}
-.post-area__comment-likes span {
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: rgb(17, 99, 65);
-}
-.post-area__comment-likes .fa-heart {
-  font-size: 16px;
-  color: red;
+  position: relative;
 }
 
 .row {

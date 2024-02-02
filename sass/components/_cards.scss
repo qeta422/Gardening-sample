@@ -34,13 +34,67 @@
     width: 980px;
     margin: 100px auto;
 
+
     img {
         width: 100%;
+        height: 320px;
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 320px;
+        background-color: rgba($color: #000000, $alpha: .4);
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        display: none;
+        transition: .5s;
+    }
+
+    &:hover &__overlay {
+        display: block;
+
+    }
+
+    &__user-information {
+        display: flex;
+        align-items: center;
+    }
+
+    &__date-name {
+            padding: 10px 0 0 10px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            color: $color-white;
+    }
+
+    &__comment-likes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 250px;
+        border-top: 1px solid rgb(210, 210, 210);
+        padding-top: 10px;
+
+        span {
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: $color-white;
+        }
+
+        .fa-heart {
+            font-size: 16px;
+            color: red;
+        }
+        
     }
     
     &__asides {
         display: flex;
         justify-content: space-between;
+
     }
 
     &__aside {
@@ -71,49 +125,9 @@
         }
     }
 
-    &__user-information {
-        display: flex;
-        align-items: center;
-    }
-
-    &__date-name {
-        p {
-            margin: 0px;
-            font-family: 'Raleway', sans-serif;
-            font-size: 12px;
-            font-weight: 300;
-            color: $color-primary;
-        }
-    }
-
     &__post-cards {
         margin-top: 30px;
         border: 1px solid rgb(188, 184, 184);
-    }
-
-    &__comment-likes {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 50px;
-        border-top: 1px solid rgb(210, 210, 210);
-        padding-top: 10px;
-
-        p {
-            margin: 0px;
-        }
-
-        span {
-            font-family: 'Raleway', sans-serif;
-            font-size: 12px;
-            font-weight: 400;
-            color: $color-primary;
-        }
-
-        .fa-heart {
-            font-size: 16px;
-            color: red;
-        }
-        
+        position: relative;
     }
 }
