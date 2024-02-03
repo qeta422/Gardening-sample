@@ -1,10 +1,8 @@
 # Gardening-sample
-## A template of html, css gardening website
+## A template of html, css(sass) gardening website
 
 Structure: 
 
-HTML : div
+HTML : semantic elements & divs
 
-CSS : primitive styles for beginners
-
-### Note: More to come!
+CSS : flexbox and position properties, animations and transforms. css mainly written in sass structure
