@@ -70,7 +70,17 @@
     max-width: 980px;
     margin: 100px auto;
 
+    @include respond(tab-land) {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     @include respond(tab-port) {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    @include respond(phone) {
         max-width: 300px;
         margin: 0 auto;
     }
@@ -80,8 +90,8 @@
         height: 320px;
         object-fit: cover;
 
-        @include respond(tab-land) {
-            font-size: 10px;
+        @include respond(tab-port) {
+            height: 250px;
         }
     }
 
@@ -140,7 +150,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond(tab-port) {
+        @include respond(phone) {
             display: inline-block;
         }
 
@@ -149,7 +159,7 @@
     &__aside {
         width: 48.5%;
 
-        @include respond(tab-port) {
+        @include respond(phone) {
             width: 100%;
         }
     }
