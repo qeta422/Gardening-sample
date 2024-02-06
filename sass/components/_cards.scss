@@ -6,7 +6,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 15rem;  
+        margin-top: 15rem;
+        
+        @include respond(tab-land) {
+            margin-top: 10rem;
+          }
+      
+          @include respond(tab-port) {
+            margin-top: 5rem;
+          }
+      
+          @include respond(phone) {
+            margin-top: 1rem;
+          }
         
     }
 
@@ -17,6 +29,18 @@
         font-weight: 400;
         text-transform: uppercase;
         color: $color-primary;
+
+        @include respond(tab-land) {
+            font-size: 30px;
+          }
+      
+          @include respond(tab-port) {
+            font-size: 25px;
+          }
+      
+          @include respond(phone) {
+            font-size: 20px;
+          }
     }
 
     .cards-paragraph {
@@ -26,18 +50,39 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         color: $color-primary;
+
+        @include respond(tab-land) {
+            font-size: 10px;
+          }
+      
+          @include respond(tab-port) {
+            font-size: 9px;
+          }
+      
+          @include respond(phone) {
+            font-size: 7px;
+          }
     }
 
 }
 
 .post-area {
-    width: 980px;
+    max-width: 980px;
     margin: 100px auto;
 
+    @include respond(tab-port) {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: 320px;
+        object-fit: cover;
+
+        @include respond(tab-land) {
+            font-size: 10px;
+        }
     }
 
     &__overlay {
@@ -95,10 +140,18 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond(tab-port) {
+            display: inline-block;
+        }
+
     }
 
     &__aside {
         width: 48.5%;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__text-content {

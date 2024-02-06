@@ -1,44 +1,93 @@
 .header {
-    width: 100%;
-    background: rgba(17, 99, 65, 0.532);
-    position: fixed;
-    z-index: 10;
+  width: 100%;
+  background: rgba(17, 99, 65, 0.532);
+  position: fixed;
+  z-index: 10;
 
-    &__nav {
-      max-width: 45%;
-      margin: 0 auto;
-      padding: 2rem 0 1rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      align-content: center;
+  @include respond(tab-land) {
+		position: absolute;
+    margin: 0;
+	}
+
+  &__nav {
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    @include respond(tab-land) {
+      max-width: 52%;
     }
 
-    &__list {
-      display: flex;
+    @include respond(tab-port) {
+      max-width: 70%;
+    }
 
-      li {
-        margin-left: 2rem;
+    @include respond(phone) {
+      max-width: 80%;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    li {
+      margin-left: 2rem;
+
+      @include respond(tab-land) {
+        margin: 13px;
+      }
+
+      @include respond(tab-port) {
+        margin: 9px;
+      }
+
+      @include respond(phone) {
+        margin: 5px;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    font-family: 'Cormorant Garamond', serif;
+
+    @include respond(phone) {
+      font-size: 15px;
+    }
+
+    &:hover {
+      color: rgb(165, 196, 183);
+    }
+  }
+
+  &__icons {
+    font-size: 24px;
+    color: $color-white;
+
+    i {
+      margin-right: 2rem;
+
+      @include respond(tab-land) {
+        margin: 10px;
       }
     }
 
-    &__link {
-      color: $color-white;
-      font-family: 'Cormorant Garamond', serif;
-
-      &:hover {
-        color: rgb(165, 196, 183);
-      }
+    @include respond(tab-land) {
+      font-size: 23px;
     }
 
-    &__icons {
-      font-size: 24px;
-      color: $color-white;
+    @include respond(tab-port) {
+      font-size: 20px;
+    }
 
-      i {
-        margin-right: 2rem;
-      }
-      
+    @include respond(phone) {
+      font-size: 15px;
     }
 
   }
+
+}

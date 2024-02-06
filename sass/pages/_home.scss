@@ -14,16 +14,50 @@
 
       animation-name: bottom;
       animation-duration: 2s;
+
+      @include respond(tab-land) {
+        top: 15rem;
+        right: 9rem;
+        max-width: 15rem;
+      }
+
+      @include respond(tab-port) {
+        top: 10rem;
+        right: 7rem;
+        max-width: 13rem;
+      }
+
+      @include respond(phone) {
+        top: 7rem;
+        right: 5rem;
+        max-width: 10rem;
+      }
     }
 
     &__signature {
       max-width: 15rem;
       float: right;
+
+      @include respond(tab-land) {
+        max-width: 10rem;
+      }
+
+      @include respond(tab-port) {
+        max-width: 5rem;
+      }
     }
 }
 
 .mosaic {
   margin-top: 5rem;
+
+  .row {
+    @include respond(tab-land) {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__heading {
     font-family: 'Cormorant Garamond', serif;
@@ -31,6 +65,18 @@
     font-size: 2.5rem;
     color: $color-primary;
     margin-right: 5rem;
+
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
   }
 
   &__paragraph {
@@ -39,5 +85,19 @@
     font-size: 1rem;
     color: $color-primary;
     margin: 1.5rem 7rem 0 0;
+
+    @include respond(tab-land) {
+      font-size: .8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: .7rem;
+      margin: 1rem 7rem 0 0;
+    }
+
+    @include respond(phone) {
+      font-size: .6rem;
+      margin: .7rem 7rem 0 0;
+    }
   }
 }
